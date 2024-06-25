@@ -1,0 +1,19 @@
+apiVersion: kafka.strimzi.io/v1beta2
+kind: KafkaBridge
+metadata:
+  name: amq-bridge
+spec:
+  template:
+    pod:
+      tolerations:
+        - key: "dedicated"
+          operator: "Equal"
+          value: "Kafka"
+          effect: "NoSchedule"
+  replicas: 1
+  resources:
+    limits:
+      memory: 1Gi
+    requests:
+      cpu: '1'
+      memory: 1Gi
