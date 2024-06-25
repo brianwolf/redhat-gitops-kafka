@@ -67,7 +67,7 @@ spec:
         limits:
           memory: 1Gi
         requests:
-          cpu: '1'
+          cpu: 500m
           memory: 1Gi
       readinessProbe:
         initialDelaySeconds: 60
@@ -80,7 +80,7 @@ spec:
         limits:
           memory: 1Gi
         requests:
-          cpu: '1'
+          cpu: 500m
           memory: 1Gi
       readinessProbe:
         initialDelaySeconds: 60
