@@ -3,19 +3,8 @@ kind: Kafka
 metadata:
   name: amq-cluster
 spec:
-  affinity:
-    nodeAffinity:
-      requiredDuringSchedulingIgnoredDuringExecution:
-        nodeSelectorTerms:
-        - matchExpressions:
-          - key: dedicated
-            operator: In
-            values:
-            - Kafka
   kafka:
     replicas: 3
-    storage:
-      size: 100Gi
     resources:
       limits:
         memory: 8Gi
@@ -24,8 +13,6 @@ spec:
         memory: 8Gi
   zookeeper:
     replicas: 3
-    storage:
-      size: 100Gi
     resources:
       limits:
         memory: 4Gi
