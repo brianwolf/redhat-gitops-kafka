@@ -7,15 +7,15 @@ spec:
     replicas: 3
     resources:
       limits:
-        memory: 8Gi
+        memory: 4Gi
       requests:
-        cpu: '3'
-        memory: 8Gi
+        cpu: 2
+        memory: 4Gi
   zookeeper:
     replicas: 3
     resources:
       limits:
-        memory: 4Gi
+        memory: 2Gi
       requests:
-        cpu: '2'
-        memory: 4Gi
+        cpu: 500m
+        memory: 2Gi
