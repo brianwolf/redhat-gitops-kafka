@@ -13,7 +13,7 @@ spec:
             values:
             - Kafka
   kafka:
-    replicas: 1
+    replicas: 3
     storage:
       size: 100Gi
     resources:
@@ -23,7 +23,7 @@ spec:
         cpu: '3'
         memory: 8Gi
   zookeeper:
-    replicas: 1
+    replicas: 3
     storage:
       size: 100Gi
     resources:
