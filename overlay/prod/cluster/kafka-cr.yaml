@@ -9,7 +9,7 @@ spec:
       limits:
         memory: 4Gi
       requests:
-        cpu: 2
+        cpu: 500m
         memory: 4Gi
   zookeeper:
     replicas: 3
